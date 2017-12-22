@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to index page</h1>
+  </body>
+</html> -->
+
+
+<!-- templates inheritance! -->
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to index page</h1>
+    <h1>This is index.html page showing!</h1>
+    <h1>{{ text|cut:'h' }}</h1>
+    <h2>{{ number|add:"99" }}</h2>
+
+  {% endblock %}
